@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Main {
 
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         
@@ -76,8 +76,8 @@ public class Main {
        savePortalsButton.click();
        
        
-       
-//        driver.quit();
+       Thread.sleep(7000);
+        driver.quit();
        
     }
     
